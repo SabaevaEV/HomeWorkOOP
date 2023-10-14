@@ -17,14 +17,14 @@ public class Stream implements Iterable<StudyGroup> {
         streamGroupList.add(studyGroup);
         groupsCount++;
     }
-    public void removeGroup(StudyGroup studyGroup) {
-        streamGroupList.remove(studyGroup);
-        groupsCount--;
-    }
-
-    public List<StudyGroup> getStreamGroupList() {
-        return streamGroupList;
-    }
+//    public void removeGroup(StudyGroup studyGroup) {
+//        streamGroupList.remove(studyGroup);
+//        groupsCount--;
+//    }
+//
+//    public List<StudyGroup> getStreamGroupList() {
+//        return streamGroupList;
+//    }
 
     public int getGroupsCount() {
         return groupsCount;
