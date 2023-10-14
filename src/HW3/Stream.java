@@ -29,14 +29,14 @@ public class Stream implements Iterable<StudyGroup> {
     public int getGroupsCount() {
         return groupsCount;
     }
-
-    public void setStreamGroupList(List<StudyGroup> streamGroupList) {
-        this.streamGroupList = streamGroupList;
-    }
-
-    public void setGroupsCount(int groupsCount) {
-        this.groupsCount = groupsCount;
-    }
+//
+//    public void setStreamGroupList(List<StudyGroup> streamGroupList) {
+//        this.streamGroupList = streamGroupList;
+//    }
+//
+//    public void setGroupsCount(int groupsCount) {
+//        this.groupsCount = groupsCount;
+//    }
 
     @Override
     public String toString() {

@@ -16,25 +16,25 @@ public class StudyGroup implements Iterable<Student> {
     public void addStudent (Student student){
         students.add(student);
     }
-    public void removeStudent (Student student){
-        students.remove(student);
-    }
+//    public void removeStudent (Student student){
+//        students.remove(student);
+//    }
+//
+//    public int getNumGroup() {
+//        return numGroup;
+//    }
 
-    public int getNumGroup() {
-        return numGroup;
-    }
-
-    public List<Student> getStudents() {
-        return students;
-    }
-
-    public void setNumGroup(int numGroup) {
-        this.numGroup = numGroup;
-    }
-
-    public void setStudents(List<Student> students) {
-        this.students = students;
-    }
+//    public List<Student> getStudents() {
+//        return students;
+//    }
+//
+//    public void setNumGroup(int numGroup) {
+//        this.numGroup = numGroup;
+//    }
+//
+//    public void setStudents(List<Student> students) {
+//        this.students = students;
+//    }
 
     @Override
     public String toString() {
