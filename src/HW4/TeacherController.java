@@ -15,7 +15,14 @@ public class TeacherController {
         this.view = view;
     }
 
-
+    public void createTeacher(String name, String subject) {
+        Teacher createteacher = new Teacher(name, subject);
+        if (teachService.validateName(createteacher) && teachService.validateSubject(createteacher)) {
+            teacherList.add(createteacher);
+        } else {
+            System.out.println("Error: Validation failed for teacher data.");
+        }
+    }
     public void viewTeacherList() {
         for (Teacher teacher : teacherList) {
             view.teacherView(teacher);
