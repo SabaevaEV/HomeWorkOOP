@@ -5,8 +5,6 @@ import HW5.Data.Model;
 import HW5.Data.Tea;
 import HW5.View.View;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
