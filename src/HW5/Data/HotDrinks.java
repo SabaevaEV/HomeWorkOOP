@@ -1,6 +1,6 @@
 package HW5.Data;
 
-public abstract class HotDrinks {
+public class HotDrinks {
     protected   String name;
     protected int cost;
     protected int volume;
@@ -23,24 +23,23 @@ public abstract class HotDrinks {
         return cost;
     }
 
-    public void setCost(int cost) {
-        this.cost = cost;
-    }
+//    public void setCost(int cost) {
+//        this.cost = cost;
+//    }
 
     public int getVolume() {
         return volume;
     }
 
-    public void setVolume(int volume) {
+    public void setVolume(int volume) {   ///???
         this.volume = volume;
     }
 
     @Override
     public String toString() {
-        return "HotDrinks{" +
-                "name='" + name + '\'' +
-                ", cost=" + cost +
-                ", volume=" + volume +
-                '}';
+        return "Чай " +
+                ", Напиток ='" + name + '\'' +
+                ", Стоимость напитка =" + cost +
+                ", Объем=" + volume;
     }
 }
