@@ -6,7 +6,6 @@ public class Teacher extends User{
         super(name, lastName, dateOfBirth);
         this.discipline = discipline;
     }
-   public Teacher(){}
 
     public String getDiscipline() {
         return discipline;

@@ -1,12 +1,11 @@
 package HW6.data;
 
 public class Student extends User {
-    Integer id;
+    private int id;
     public Student(String name, String lastName, String dateOfBirth, Integer id){
         super(name, lastName, dateOfBirth);
         this.id = id;
     }
-    public Student(){}
 
     public void setId(Integer id) {
         this.id = id;

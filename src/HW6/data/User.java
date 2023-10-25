@@ -4,7 +4,6 @@ public abstract class User implements UserInterface {
     protected String name;
     protected String lastName;
     protected String dateOfBirth;
-    User(){}
 
     public User(String name, String lastName, String dateOfBirth) {
         this.name = name;
