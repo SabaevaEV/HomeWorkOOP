@@ -1,5 +1,9 @@
 package HW6.data;
 
+//Single responsibility principle
+//Liskov substitution principle
+//Open-closed principle
+
 public class Student extends User {
     private int id;
     public Student(String name, String lastName, String dateOfBirth, Integer id){
@@ -17,11 +21,10 @@ public class Student extends User {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                '}';
+        return "СТУДЕНТ "  + ", " +
+                " id=" + id + ", " +
+                " Имя - " + name  + ", " +
+                " Фамилия - " + lastName  + ", " +
+                " Дата рождения - " + dateOfBirth ;
     }
 }

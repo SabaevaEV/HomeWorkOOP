@@ -1,6 +1,8 @@
 package HW6.data;
 //UserInterface позволяет использовать его для любых экземпляров классов (студент, учитель и ...),
 //Liskov substitution principle
+//Interface segregation principle
+
 public interface UserInterface {
     String getName();
     void setName(String name);

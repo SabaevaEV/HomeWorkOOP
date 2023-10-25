@@ -1,5 +1,8 @@
 package HW6.data;
 
+//Single responsibility principle
+//Liskov substitution principle
+//Open-closed principle
 public class Teacher extends User{
     String discipline;
     public Teacher(String name, String lastName, String dateOfBirth, String discipline) {
@@ -17,11 +20,10 @@ public class Teacher extends User{
 
     @Override
     public String toString() {
-        return "Teacher{" +
-                "discipline='" + discipline + '\'' +
-                ", name='" + name + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", dateOfBirth='" + dateOfBirth + '\'' +
-                '}';
+        return "УЧИТЕЛЬ"  + ", " +
+                " Предмет - " + discipline  + ", " +
+                " Имя - " + name + ", " +
+                " Фамилия - " + lastName  + ", " +
+                " Дата рождения - " + dateOfBirth ;
     }
 }

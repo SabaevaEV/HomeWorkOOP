@@ -7,12 +7,15 @@ import HW6.data.UserInterface;
 import java.util.ArrayList;
 import java.util.List;
 
+//Single responsibility principle
+//Liskov substitution principle
+//Open-closed principle
+//Interface segregation principle
+//TeacherController используется только для учителей
 public class TeacherController <T extends UserInterface> implements UserController<T> {
     protected List<Group<T>> teachergroups;
     protected UserView<T> teacherView;
 
-    // Создание конструктора, который принимает значение полей класса StudentController,
-    // внутри конструктора происходит инициализация полей для передачи значений объекта.
     public TeacherController(UserView<T> teacherView) {
         teachergroups = new ArrayList<>();
         this.teacherView = teacherView;

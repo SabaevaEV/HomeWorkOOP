@@ -2,19 +2,22 @@ package HW6.Controller;
 
 import HW6.data.Group;
 import HW6.View.UserView;
-//import HW6.data.Student;
 import HW6.data.UserInterface;
 
 import java.util.ArrayList;
 import java.util.List;
 
+//Single responsibility principle
+//Liskov substitution principle
+//Open-closed principle
+//Interface segregation principle
+
+//StudentController используется только для студентов
 public class StudentController<T extends UserInterface> implements UserController<T>{
 
     protected List<Group<T>> studentgroups;
     protected UserView<T> studentView;
 
-    // Создание конструктора, который принимает значение полей класса StudentController,
-    // внутри конструктора происходит инициализация полей для передачи значений объекта.
     public StudentController(UserView<T> studentView) {
         studentgroups = new ArrayList<>();
         this.studentView = studentView;

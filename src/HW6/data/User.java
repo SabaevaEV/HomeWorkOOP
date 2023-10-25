@@ -1,5 +1,10 @@
 package HW6.data;
+
 /* класс User реализует интерфейс UserInterface */
+//Open-closed principle
+//Liskov substitution principle
+//Dependency inversion principle
+
 public abstract class User implements UserInterface {
     protected String name;
     protected String lastName;

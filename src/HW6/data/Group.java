@@ -3,14 +3,16 @@ package HW6.data;
 import java.util.ArrayList;
 import java.util.List;
 
+//Liskov substitution principle
+//Open-closed principle
+
 public class Group <T extends UserInterface>
 {
     private String groupName; // Имя группы
     private List<T> students; // лист студентов
     private List<T> teachers; // лист учителей
 
-    // Конструктор, который принимает значение полей класса Group,
-    // происходит инициализация полей для передачи значений объекта.
+
     public Group(String groupName) {
         this.groupName = groupName;
         this.students = new ArrayList<>();
