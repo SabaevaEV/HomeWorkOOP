@@ -5,8 +5,6 @@ import HW6.Controller.TeacherController;
 import HW6.View.AllView;
 import HW6.data.*;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
