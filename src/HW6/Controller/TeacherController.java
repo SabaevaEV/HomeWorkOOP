@@ -1,5 +1,6 @@
 package HW6.Controller;
 
+import HW6.View.UserView;
 import HW6.data.Group;
 import HW6.data.UserInterface;
 
@@ -8,13 +9,13 @@ import java.util.List;
 
 public class TeacherController <T extends UserInterface> implements UserController<T> {
     protected List<Group<T>> teachergroups;
-    protected UserView<T> userView;
+    protected UserView<T> teacherView;
 
     // Создание конструктора, который принимает значение полей класса StudentController,
     // внутри конструктора происходит инициализация полей для передачи значений объекта.
-    public TeacherController(UserView<T> userView) {
+    public TeacherController(UserView<T> teacherView) {
         teachergroups = new ArrayList<>();
-        this.userView = userView;
+        this.teacherView = teacherView;
     }
 
     // Метод создания группы учителей.
@@ -40,9 +41,7 @@ public class TeacherController <T extends UserInterface> implements UserControll
 
     // Метод, который отправляет группы в консоль.
     public void sendGroupsOnConsole() {
-        userView.sendOnConsole(teachergroups);
+        teacherView.sendOnConsole(teachergroups);
     }
-
-
 
 }

@@ -10,20 +10,20 @@ import java.util.List;
 
 public class StudentController<T extends UserInterface> implements UserController<T>{
 
-    protected List<Group<T>> groups;
-    protected UserView<T> userView;
+    protected List<Group<T>> studentgroups;
+    protected UserView<T> studentView;
 
     // Создание конструктора, который принимает значение полей класса StudentController,
     // внутри конструктора происходит инициализация полей для передачи значений объекта.
-    public StudentController(UserView<T> userView) {
-        groups = new ArrayList<>();
-        this.userView = userView;
+    public StudentController(UserView<T> studentView) {
+        studentgroups = new ArrayList<>();
+        this.studentView = studentView;
     }
 
     // Метод создания группы студентов.
     public void createGroup(String groupName) {
         Group<T> group = new Group<>(groupName);
-        groups.add(group);
+        studentgroups.add(group);
     }
 
 
@@ -39,11 +39,11 @@ public class StudentController<T extends UserInterface> implements UserControlle
 
     // Метод возврата всех групп студентов.
     public List<Group<T>> getGroups() {
-        return groups;
+        return studentgroups;
     }
 
     // Метод, который отправляет группы в консоль.
     public void sendGroupsOnConsole() {
-        userView.sendOnConsole(groups);
+        studentView.sendOnConsole(studentgroups);
     }
 }
