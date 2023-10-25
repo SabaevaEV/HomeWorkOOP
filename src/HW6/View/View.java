@@ -1,7 +1,7 @@
 package HW6.View;
 
-import Seminar4.Controller.Controller;
-import Seminar4.data.Group;
+import HW6.Controller.Controller;
+import HW6.data.Group;
 public class View {
     Controller controller = new Controller();
     public void createGroup(Group group){

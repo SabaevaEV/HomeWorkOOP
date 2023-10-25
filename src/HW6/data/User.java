@@ -1,6 +1,6 @@
 package HW6.data;
-
-public abstract class User {
+/* класс User реализует интерфейс UserInterface */
+public abstract class User implements UserInterface {
     protected String name;
     protected String lastName;
     protected String dateOfBirth;

@@ -1,7 +1,7 @@
 package HW6.Controller;
 
-import Seminar4.data.Group;
-import Seminar4.data.Student;
+import HW6.data.Group;
+import HW6.data.Student;
 
 import java.util.ArrayList;
 import java.util.List;

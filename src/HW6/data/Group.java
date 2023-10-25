@@ -18,7 +18,7 @@ public class Group {
         return id;
     }
 
-    public Group(){}
+//    public Group(){}
 
     public Group(ArrayList<Student> studentsList, Teacher teacher, Integer id){
         this.studentsList = studentsList;
